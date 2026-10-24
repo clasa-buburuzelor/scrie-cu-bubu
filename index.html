@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scrie cu Bubu!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cloud cloud-one"></div>
+  <div class="cloud cloud-two"></div>
+
+  <header class="top-bar">
+    <img id="mascotSmall" class="mascot-small" alt="Bubu">
+    <h1 class="title">Scrie cu Bubu!</h1>
+    <button id="soundButton" class="round-button" type="button" aria-label="Pornește sau oprește sunetul">🔊</button>
+  </header>
+
+  <nav class="modes">
+    <button id="freeModeButton" class="mode-button active" type="button">✏️ Scrie liber</button>
+    <button id="wordModeButton" class="mode-button" type="button">🎯 Cuvinte</button>
+  </nav>
+
+  <main class="stage">
+    <div id="wordPicture" class="word-picture hidden" aria-hidden="true"></div>
+    <div id="board" class="board" aria-live="polite"></div>
+    <p id="helperText" class="helper-text"></p>
+  </main>
+
+  <div id="surprise" class="surprise hidden" role="dialog" aria-label="Surpriză de la Bubu">
+    <img id="bubuImage" class="bubu-image" alt="Bubu, buburuza">
+    <p class="surprise-text">Bravo! Ai găsit-o pe Bubu!</p>
+  </div>
+
+  <canvas id="confettiCanvas" class="confetti-canvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
